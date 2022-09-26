@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>HTML5電子書翻頁動畫特效DEMO演示</title>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
-<link type="text/css" href="css/main.css" rel="stylesheet" media="screen" />		
+<link type="text/css" href="main.css" rel="stylesheet" media="screen" />		
 </head>
 <body>
 		<div id="app"><!--Vue -->
@@ -15,22 +15,22 @@
 					<canvas id="shineflip-page-mid-canvas"></canvas>
 					<!-- 封面 -->
 					<section class="page">
-						<div><img src="images/abc.jpg" style="float:right;margin:8px;" alt=""></div>
-						<span style="left:2px;"><img src="images/zh.png" /></span> 
+						<div><img src="abc.jpg" style="float:right;margin:8px;" alt=""></div>
+						<span style="left:2px;"><img src="zh.png" /></span> 
 					</section>
 					<!-- 封面 end-->
 			
 			 		 <!-- Vue 迴圈 -->
-					<section v-for="item in numbers "  class="page" style="background:url(images/left_pk.jpg)">
+					<section v-for="item in numbers "  class="page" style="background:url(left_pk.jpg)">
 							<!-- <img :src="'https://picsum.photos/600?random'+ item"  style="float:right;margin-top:9px;" /> -->
-							<img :src="'images/0'+item +'.jpg'"  style="float:right;margin:8px"  >
+							<img :src="'0'+item +'.jpg'"  style="float:right;margin:8px"  >
 					</section>
 					<!-- Vue 迴圈 end-->
 				
 					<!-- 封面底 -->
 					<section class="page">
-						<div><img src="images/backCover.jpg"  style="float:left;margin:8px;" /></div>
-						<span style="right:4px;"><img src="images/zh.png" /></span> 
+						<div><img src="backCover.jpg"  style="float:left;margin:8px;" /></div>
+						<span style="right:4px;"><img src="zh.png" /></span> 
 					</section>
 					<!-- 封面底 end-->
 				</div>	
@@ -46,7 +46,7 @@
     })
 </script>
 
-<script type="text/javascript" src="js/shineflip_min.js"></script>
+<script type="text/javascript" src="shineflip_min.js"></script>
 <script type="text/javascript">
 var shineFlip = new ShineFlip({
 	// autoFitScreen: true,
